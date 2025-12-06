@@ -47,7 +47,7 @@ const Portfolio: React.FC = () => {
   }, []);
 
 
-  
+
   const scrollTo = (id: string) => {
     setIsMenuOpen(false);
     const element = document.getElementById(id);
@@ -116,7 +116,7 @@ const Portfolio: React.FC = () => {
       <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}>
         <div className="container mx-auto px-6 flex justify-between items-center">
           <div className={`text-2xl font-bold tracking-tight ${linkcolor} md:text-slate-900 cursor-pointer`} onClick={() => scrollTo('home')}>
-            Oyedepo<span className="text-emerald-600">.</span>
+            <span className='hidden md:inline-flex'>Olalekan</span> Oyedepo<span className="text-emerald-600">.</span>
           </div>
 
           {/* Desktop Nav */}
