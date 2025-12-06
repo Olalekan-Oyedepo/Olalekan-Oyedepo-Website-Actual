@@ -112,7 +112,7 @@ const Portfolio: React.FC = () => {
       {/* Navigation */}
       <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}>
         <div className="container mx-auto px-6 flex justify-between items-center">
-          <div className="text-2xl font-bold tracking-tight text-white md:text-slate-900 cursor-pointer" onClick={() => scrollTo('home')}>
+          <div className={`text-2xl font-bold tracking-tight ${linkcolor} md:text-slate-900 cursor-pointer`} onClick={() => scrollTo('home')}>
             Oyedepo<span className="text-emerald-600">.</span>
           </div>
 
@@ -128,9 +128,9 @@ const Portfolio: React.FC = () => {
               </button>
             ))}
           </div>
-a
+
           {/* Mobile Menu Button */}
-          <button className="md:hidden text-white md:text-slate-900" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <button className={`md:hidden ${linkcolor} md:text-slate-900`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
@@ -213,7 +213,7 @@ a
 
 
       <section id="services" className="py-20 bg-slate-50 relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 via-blue-500 to-emerald-500"></div>
+        {/* <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 via-blue-500 to-emerald-500"></div> */}
         <div className="container mx-auto px-6 max-w-6xl">
              <Reveal>
                 <div className="text-center mb-16">
