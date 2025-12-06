@@ -50,8 +50,6 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://images.squarespace-cdn.com/content/v1/64e756776b2a1767f13006f5/9c3ad62b-e242-4d9c-a527-653d90beda17/Olalekan__%281%29.jpg",
-        width: 1200,
-        height: 630,
         alt: NAME,
       },
     ],
