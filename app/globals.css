@@ -23,4 +23,40 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  transition-duration: 200ms;
+}
+
+.user_dp {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/64e756740b25f6170ce818c3/9c3ad62b-e242-4d9c-a527-653d90beda17/Olalekan__%281%29.jpg?format=2500w');
+    background-size: cover;
+    background-position: center;
+    transition: border-radius 0.5s linear;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+
+.user_dp:hover {
+    animation: wobble 4s linear infinite;
+}
+
+@keyframes wobble {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    25% {
+        border-radius: 70% 60% 40% 30% / 40% 60% 30% 70%;
+    }
+    50% {
+        border-radius: 30% 70% 60% 40% / 70% 40% 60% 30%;
+    }
+    75% {
+        border-radius: 40% 30% 70% 60% / 30% 70% 40% 60%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
 }
