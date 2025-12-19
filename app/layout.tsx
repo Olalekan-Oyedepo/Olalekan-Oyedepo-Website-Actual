@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 
 const SITE_URL = "https://www.olalekanoyedepo.com/"; 
 const NAME = "Oyedepo Olalekan";
-const ROLE = "PhD Candidate & Social Policy Researcher";
-const DESCRIPTION = "PhD candidate at UWS researching charitable food aid and inequalities. Project Coordinator for The Hope Project Scotland and advocate for Sickle-cell disease awareness.";
+const ROLE = "Social Policy Researcher"; // Changed from PhD Candidate
+const DESCRIPTION = "Social Researcher at UWS researching charitable food aid and inequalities. Project Coordinator for The Hope Project Scotland and advocate for Sickle-cell disease awareness."; // Changed
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -39,7 +39,6 @@ export const metadata: Metadata = {
     "Migrant health research",
   ],
   
-  // 5. OPEN GRAPH (For LinkedIn/Twitter/Facebook cards)
   openGraph: {
     title: `${NAME} - ${ROLE}`,
     description: DESCRIPTION,
@@ -68,14 +67,13 @@ export const metadata: Metadata = {
   },
 };
 
-// 8. JSON-LD SCHEMA (The "Knowledge Graph" Generator)
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: NAME,
   alternateName: "Lekan Oyedepo",
   url: SITE_URL,
-  jobTitle: ["PhD Candidate", "Project Coordinator"],
+  jobTitle: ["Social Researcher", "Project Coordinator"], // Changed
   affiliation: [
     {
       "@type": "Organization",
@@ -89,7 +87,7 @@ const jsonLd = {
   alumniOf: [
     {
       "@type": "CollegeOrUniversity",
-      name: "University of the West of Scotland", // PhD (Current)
+      name: "University of the West of Scotland", 
     },
   ],
   knowsAbout: [
@@ -108,9 +106,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-slate-950 transition-colors duration-300`}
       >
         <script
           type="application/ld+json"

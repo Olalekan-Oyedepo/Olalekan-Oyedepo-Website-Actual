@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+/* 1. FORCE DARK MODE CLASS STRATEGY 
+  This tells Tailwind v4 to apply 'dark:' styles when the '.dark' class 
+  is present on the HTML tag (which our toggle button does).
+*/
+@variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -12,11 +18,22 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* 2. CSS VARIABLES FOR THEME COLORS
+  These handle the base background/text colors smoothly.
+  We use the .dark selector to manually override variables when toggled.
+*/
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    /* Default to system dark if no class is present yet */
+    --background: #000000;
     --foreground: #ededed;
   }
+}
+
+/* When the dark class is manually active */
+.dark {
+  --background: #000000;
+  --foreground: #ededed;
 }
 
 body {
@@ -31,7 +48,7 @@ body {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background-image: url('https://images.squarespace-cdn.com/content/v1/64e756740b25f6170ce818c3/9c3ad62b-e242-4d9c-a527-653d90beda17/Olalekan__%281%29.jpg?format=2500w');
+    background-image: url('https://images.squarespace-cdn.com/content/v1/64e756776b2a1767f13006f5/9c3ad62b-e242-4d9c-a527-653d90beda17/Olalekan__%281%29.jpg?format=2500w');
     background-size: cover;
     background-position: center;
     transition: border-radius 0.5s linear;
