@@ -295,7 +295,7 @@ const Portfolio: React.FC = () => {
           <div className="space-y-12 border-l-2 border-slate-200 dark:border-slate-800 pl-8 ml-4">
             <TimelineItem 
               delay={0}
-              role="PhD Researcher" // KEPT as requested
+              role="PhD Researcher"
               org="University of the West of Scotland"
               date="Present"
               desc="Leading research on charitable food aid and inequality mechanisms in the UK."
@@ -505,7 +505,6 @@ const Portfolio: React.FC = () => {
         </div>
       </section>
 
-      {/* NEW: Explore More (Gallery & Blog Teasers) */}
       <section className="py-20 bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
         <div className="container mx-auto px-6 max-w-6xl">
             <Reveal>
