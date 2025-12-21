@@ -563,7 +563,7 @@ const Portfolio: React.FC = () => {
         <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row justify-between items-center mb-8">
                 <div className="text-2xl font-bold tracking-tight text-slate-900 dark:text-white mb-4 md:mb-0">
-                    Oyedepo<span className="text-emerald-600">.</span>
+                    Olalekan Oyedepo<span className="text-emerald-600">.</span>
                 </div>
                 <div className="text-slate-500 dark:text-slate-400 text-sm text-center md:text-right">
                     <p className="mb-2">Social Researcher & Social Entrepreneur</p>
