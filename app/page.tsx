@@ -95,8 +95,8 @@ const Portfolio: React.FC = () => {
     { name: 'Projects', id: 'projects' }, 
     { name: 'Services', id: 'services' },
     { name: 'Research', id: 'research' },
-    { name: 'Gallery', href: '/gallery' },
-    { name: 'Blog', href: '/blog' },
+    { name: 'GALLERY', href: '/gallery' },
+    { name: 'BLOG', href: '/blog' },
     { name: 'Contact', id: 'contact' },
   ];
 
@@ -401,7 +401,7 @@ const Portfolio: React.FC = () => {
                 />
                 <ServiceCard 
                     icon={<Award size={24} />}
-                    title="DEI Consulting"
+                    title="Anti-Racism"
                     desc="Advising on Diversity, Equity, and Inclusion strategies using Anti-Racism Observatory insights."
                     delay={300}
                 />
