@@ -26,6 +26,7 @@ import Hero from './Components/Hero';
 import { ServiceCard } from './Components/serviceCard';
 import { FlipCard } from './Components/Flipcard';
 import { TimelineItem } from './Components/timelineProps';
+import { projects } from './variables';
 
 interface NavLink {
   name: string;
@@ -100,43 +101,7 @@ const Portfolio: React.FC = () => {
     { name: 'Contact', id: 'contact' },
   ];
 
-  const projects = [
-    {
-      title: "Co-production in Scottish Policy",
-      category: "Article",
-      url: "https://www.strath.ac.uk/humanities/centreforhealthpolicy/ourblog/co-productioninscottishpolicyblogseptember2024/",
-      description: "Contribution to the Centre for Health Policy blog regarding policy co-production.",
-      color: "text-emerald-400"
-    },
-    {
-      title: "Igbadun",
-      category: "Social Enterprise",
-      url: "https://www.igbadun.co.uk/",
-      description: "A social enterprise initiative focused on community engagement and cultural connection.",
-      color: "text-orange-400"
-    },
-    {
-      title: "Gradel Institute of Charity",
-      category: "Profile",
-      url: "https://www.gradelinstituteofcharity.co.uk/olalekan-oyedepo",
-      description: "Featured researcher profile highlighting contributions to the third sector.",
-      color: "text-purple-400"
-    },
-    {
-      title: "Anti-Racism Observatory Minutes",
-      category: "Policy Document",
-      url: "https://www.gov.scot/publications/future-anti-racism-observatory-for-scotland-design-advisory-group-minutes-28-august-2024/",
-      description: "Minutes from the Future Anti-Racism Observatory for Scotland Design Advisory Group.",
-      color: "text-red-400"
-    },
-    {
-      title: "Design Advisory Group",
-      category: "Government Group",
-      url: "https://www.gov.scot/groups/future-anti-racism-observatory-for-scotland-design-advisory-group/",
-      description: "Member of the Design Advisory Group for the Future Anti-Racism Observatory for Scotland.",
-      color: "text-teal-400"
-    }
-  ];
+  
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 font-sans selection:bg-emerald-200 selection:text-emerald-900 overflow-x-hidden transition-colors duration-300">

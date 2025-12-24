@@ -1,25 +1,9 @@
 "use client";
 import Link from 'next/link';
 import { ArrowLeft, BookOpen, ArrowUpRight } from 'lucide-react';
+import { articles } from '../variables';
 
 export default function Blog() {
-  const articles = [
-    {
-      title: "Co-production in Scottish Policy",
-      date: "September 2024",
-      url: "https://www.strath.ac.uk/humanities/centreforhealthpolicy/ourblog/co-productioninscottishpolicyblogseptember2024/",
-      excerpt: "Contribution to the Centre for Health Policy blog regarding policy co-production. Discussing the nuances of involving community voices in high-level decision making.",
-      tags: ["Policy", "Scotland", "Research"]
-    },
-    // Add more articles here
-    {
-        title: "Understanding Food Aid Inequalities",
-        date: "Coming Soon",
-        url: "#",
-        excerpt: "An upcoming deep dive into the mechanisms of charitable food aid in the UK and its socioeconomic implications.",
-        tags: ["Food Aid", "Inequality"]
-    }
-  ];
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 font-sans transition-colors duration-300">
