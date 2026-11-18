@@ -267,7 +267,7 @@ const Portfolio: React.FC = () => {
             />
             <TimelineItem
               delay={200}
-              role="Project Coordinator"
+              role="Co-founder and Project Coordinator"
               org="The Hope Project Scotland"
               date="Ongoing"
               desc="Coordinating research initiatives, advocating for Sickle-cell patients, and managing stakeholder relationships."
